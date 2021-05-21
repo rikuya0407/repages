@@ -1,0 +1,352 @@
+body{
+    margin: 0;
+}
+
+.back{
+    position: relative;
+   
+    & .back_img{
+           display: inline-block;
+           background-color: darkgoldenrod;
+           width: 100%;
+           height: 500px;
+           margin-bottom: 50px;
+        }
+
+    & .btn{
+        opacity: 0;
+    }
+
+    & .head-word{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        margin-left: 30px;
+        & .head-main{
+            font-size: 120px;
+            margin-bottom: 0;
+            margin-top: 50px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+        }
+        & .head-sub{
+            font-size: 30px;
+            font-family:'Dela Gothic One','Lucida Sans Unicode', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-top: 10px;
+        }
+    }
+}
+
+.swiper-container {
+    width: 100%;
+    height: 300px;
+}
+
+.contain{
+    margin: 0 60px;
+    
+    & .img-contain{
+        background-color: aquamarine;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 100px;
+        position: relative;
+        &:nth-child(2){
+            background-color: beige;
+        }
+        &:nth-child(3){
+            background-color:cadetblue;
+        }
+        
+            
+        & img{
+                margin: 40px 0px;
+                width: 70%;
+        }
+    
+    
+        & .contain-word{
+            & .text-animation2{
+                width: 100%;
+                font-size: 36px;
+                margin-top: 0;
+                font-family: 'Times New Roman', Times, serif;
+                &.inview{
+                    & .char{
+                        display: inline-block;
+                        animation-name: timing-animation;
+                        animation-duration: 2s;
+                        animation-timing-function: ease;
+                        @for $i from 1 through 14{
+                            &:nth-child(#{$i}){
+                                animation-delay: $i * 0.04s;
+                            }
+                        }
+                            
+                            
+                    }
+                }
+            }
+        }
+    
+        & p{
+            font-size: 24px;
+            margin: 30px 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    }
+
+    
+
+}
+
+main{
+    & .text-animation{
+        margin: 0px auto;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 36px;
+        font-family: 'Times New Roman', Times, serif;
+        &.inview{
+            & .char{
+                display: inline-block;
+                animation-name: timing-animation;
+                animation-duration: 2s;
+                animation-timing-function: ease;
+                @for $i from 1 through 15{
+                    &:nth-child(#{$i}){
+                        animation-delay: $i * 0.04s;
+                    }
+                }
+                
+                
+            }
+        }
+    }
+
+    @keyframes timing-animation {
+        0%{
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        100%{
+            transform: none;
+            opacity: 1;
+        }
+    }
+
+}
+
+.main-btn{
+    text-align: center;
+    margin: 200px 0px;
+    & .back-btn{
+        background-color: white;
+        width: 120px;
+        height: 50px;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        &::before{
+            content:"";
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: transform 0.3s;
+            transform: translateX(-100%);
+            z-index: -1;
+        }
+
+        &:hover{
+            color: white;
+            &::before{
+                transform: none;
+            }
+        }
+    }
+
+
+    & .btn-anime{
+        background-color: white;
+        width: 120px;
+        height: 50px;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        perspective: 300px;
+        transform-style: preserve-3d;
+
+        & span{
+            display: inline-block;
+            transform: translateZ(20px);
+        }
+
+        &::before{
+            content:"";
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 0.3s;
+            transform-origin: top center;
+            transform: rotateX(90deg);
+            // z-index: -1;
+            opacity: 0;
+        }
+
+        &:hover{
+            color: white;
+            &::before{
+                transform: none;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.footer-back{
+    margin-top: 40px;
+    background-color: antiquewhite;
+    height: 100px;
+    font-size: 18px;
+    color: burlywood;
+    font-family:'Kiwi Maru', Arial, Helvetica, sans-serif;
+    position: relative;
+    & .name{
+        margin: 15px 15px;
+    }
+    & .time{
+        margin: 0 15px;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+// // 960px以上の時のcss
+// @media screen and (min-width:960px){
+//     .back{
+//         & .spinner{
+//             display: flex;
+//             width: 300px;
+//             height: 300px;
+//             background-color:yellow;
+//             position: absolute;
+//             top: 180px;
+//             left: 650px;
+//             animation-name: sk-spinner;
+//             animation-delay: 3s;
+//             animation-duration: 8s;
+//             animation-iteration-count: infinite;
+//             animation-timing-function: ease;
+//         }
+
+//         @keyframes sk-spinner {
+//             0%{
+//                 transform: rotateX(0) rotateY(0);
+//             }
+//             50%{
+//                 transform: rotateX(-180deg) rotateY(0);
+//             }
+//             100%{
+//                 transform: rotateX(-180deg) rotateY(-180deg);
+//             }
+//         }
+//     }
+// }
+
+@media screen and (max-width:959px){
+    .back{ 
+        & .menu-btn{
+            opacity: 1;
+            position: absolute;
+            top: 50px;
+            right: 10px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            
+
+            & span{
+                width: 35px;
+                height: 2px;
+                display: block;
+                background: black;
+                margin-bottom: 9px;
+                transition: transform 1s;
+
+                &:nth-child(3){
+                    margin-bottom:0 ;
+                }
+            }
+        }
+
+    }
+
+    & .menu-open{
+        & span{
+            &:nth-child(1){
+                transform: translateY(11px) rotate(135deg);
+            }
+            &:nth-child(2){
+                transform: scale(0);
+            }
+            &:nth-child(3){
+                transform: translateY(-11px) rotate(-135deg);
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:960px){
+    .back{
+        & .menu-btn{
+            opacity: 0;
+        }
+
+        & .btn{
+            opacity: 1;
+            display: flex;
+            position: absolute; 
+            top: 20px;
+            left: 0;
+            width: 100%;
+            
+            & .btn-name{
+                cursor: pointer;
+                width: 150px;
+                height: 50px;
+                margin-left: 30px;
+                background-color:darkgoldenrod;
+                font-size: 15px;
+                font-weight: bold;
+                border: 3px solid black;
+                border-radius: 10px;
+                transition: background-color 0.5s;
+                box-shadow: 3px 3px  black;
+    
+                &:hover{
+                    background-color: blueviolet;
+                }
+    
+                &.push:hover{
+                    transform: translate(3px,3px);
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}

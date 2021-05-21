@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap" rel="stylesheet">
+    <title>Re:Pages</title>
+</head>
+<body>
+    <header>
+        <div class="back">
+            <div class="back_img"></div>
+            <button class="menu-btn" onclick="document.querySelector('body').classList.toggle('menu-open');">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="btn">
+                <button class="btn-name push">Home</button>
+                <button class="btn-name push">会社概要</button>
+                <button class="btn-name push">制作の流れ</button>
+                <button class="btn-name push">実績</button>
+                <button class="btn-name push">お問い合わせ</button>
+            </div>
+            <div class="head-word">
+                <h1 class="head-main">Re:Pages</h1>
+                <p class="head-sub">〜あなたが必要とするwebを〜</p>
+            </div>
+            <div class="spinner"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="text-animation">このようなお悩みありませんか？</div>
+        <div class="contain">
+            <!-- ーーーーーーーーー1つ目ーーーーーーーーー -->
+            <div class="img-contain">
+                <div class="img-dark">
+                    <img src="images/web-2.jpeg" alt="">
+                </div>
+                <div class="contain-word">
+                    <div class="text-animation2">--売り上げをあげたい--</div>
+                    <p>webページがあれば売り上げが<br>もっとよくなるなと思ったことありませんか?</p>
+                </div>
+            </div>
+            <!-- ーーーーーーーーー2つ目ーーーーーーーーー -->
+                <div class="img-contain">
+                    <div class="img-dark">
+                        <img src="images/web-2.jpeg" alt="">
+                    </div>
+                    <div class="contain-word">
+                        <div class="text-animation2">--売り上げをあげたい--</div>
+                        <p>webページがあれば売り上げが<br>もっとよくなるなと思ったことありませんか?</p>
+                    </div>
+                </div>
+            <!-- ーーーーーーーーー3つ目ーーーーーーーーー -->
+            <div class="img-contain">
+                <div class="img-dark">
+                    <img src="images/web-2.jpeg" alt="">
+                </div>
+                <div class="contain-word">
+                    <div class="text-animation2">--売り上げをあげたい--</div>
+                    <p>webページがあれば売り上げが<br>もっとよくなるなと思ったことありませんか?</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-btn">
+            <button class="back-btn">申し込む</button>
+        </div>
+        
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <div class="main-btn">
+            <button class="btn-anime">
+                <span>詳しく見る</span>    
+            </button> 
+        </div>
+        
+    </main>
+        
+        <footer>
+            <div class="footer-back">
+          <div class="name">作成者：Y.RIKUYA</div>
+          <div class="time">@2021/5</div>
+      </div>
+  </footer>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
