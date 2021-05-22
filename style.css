@@ -401,7 +401,7 @@ main .text-animation.inview .char:nth-child(15) {
   }
   .back .head-word .head-main {
     font-size: 80px;
-    font-weight: normal;
+    font-weight: bold;
   }
 }
 
