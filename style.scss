@@ -22,9 +22,7 @@ body{
         top: 100px;
         left: 0;
         margin-left: 30px;
-        max-width: 60%;
         & .head-main{
-            width: max-content;
             font-size: 120px;
             margin-bottom: 0;
             margin-top: 50px;
@@ -272,6 +270,7 @@ main{
 @media screen and (max-width:420px){
     .back{
         & .head-word{
+            margin-left: 15px;
             & .head-main{
                 font-size: 80px;
                 font-weight: normal;

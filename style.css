@@ -23,13 +23,9 @@ body {
   top: 100px;
   left: 0;
   margin-left: 30px;
-  max-width: 60%;
 }
 
 .back .head-word .head-main {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   font-size: 120px;
   margin-bottom: 0;
   margin-top: 50px;
@@ -400,6 +396,9 @@ main .text-animation.inview .char:nth-child(15) {
 }
 
 @media screen and (max-width: 420px) {
+  .back .head-word {
+    margin-left: 15px;
+  }
   .back .head-word .head-main {
     font-size: 80px;
     font-weight: normal;
