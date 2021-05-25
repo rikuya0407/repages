@@ -183,14 +183,13 @@ body {
 }
 
 main .text-animation {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
   margin: 0px auto;
   margin-bottom: 20px;
   text-align: center;
   font-size: 36px;
   font-family: 'Times New Roman', Times, serif;
+  white-space: nowrap;
 }
 
 main .text-animation.inview .char {
