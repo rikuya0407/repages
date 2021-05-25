@@ -1,9 +1,31 @@
 body{
     margin: 0;
+
+}
+
+.global-container{
+    &.menu-open{
+        transform: translate(-200px, 60px);
+        & span{
+            &:nth-child(1){
+                transform: translateY(11px) rotate(135deg);
+            }
+            &:nth-child(2){
+                transform: scale(0);
+            }
+            &:nth-child(3){
+                transform: translateY(-11px) rotate(-135deg);
+            }
+        }
+        
+    }
+
+    
 }
 
 .back{
     position: relative;
+    z-index: 2;
    
     & .back_img{
            display: inline-block;
@@ -34,7 +56,9 @@ body{
             margin-top: 10px;
         }
     }
+
 }
+
 
 .swiper-container {
     width: 100%;
@@ -101,7 +125,8 @@ body{
 
 main{
     & .text-animation{
-        margin: 0px auto;
+        width: max-content;
+        margin: 0px;
         margin-bottom: 20px;
         text-align: center;
         font-size: 36px;
@@ -277,9 +302,40 @@ main{
             }
         }
     }
+
+    main{
+        & .text-animation{
+            font-size: 12px;
+            width: fit-content;
+        }
+    }
 }
 
 @media screen and (max-width:959px){
+    body{
+      position: relative;
+        & .mobile-menu{
+            position: absolute;
+            top: 60px;
+            right: 60px;
+            & .mobile-menu-icon{
+                & a{
+                    text-decoration: none;
+                        & .mobile-menu-item{
+                            color: black;
+                            margin-bottom: 10px;
+                            // list-style: none;
+                            font-size: 18px;
+                            font-family:'Times New Roman', Times, serif;
+                            &:hover{
+                                color: cyan;
+                            }
+                        }
+                }
+            }
+        }
+    }
+
     .back{ 
         & .menu-btn{
             opacity: 1;
@@ -303,23 +359,12 @@ main{
                     margin-bottom:0 ;
                 }
             }
+
         }
+
 
     }
 
-    & .menu-open{
-        & span{
-            &:nth-child(1){
-                transform: translateY(11px) rotate(135deg);
-            }
-            &:nth-child(2){
-                transform: scale(0);
-            }
-            &:nth-child(3){
-                transform: translateY(-11px) rotate(-135deg);
-            }
-        }
-    }
 }
 
 

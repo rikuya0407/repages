@@ -13,10 +13,23 @@
     <title>Re:Pages</title>
 </head>
 <body>
-    <header>
+    <div class="mobile-menu">
+            <ul class="mobile-menu-icon">
+                <a href="">
+                    <li class="mobile-menu-item">Home</li>
+                </a>
+                <a href="">
+                    <li class="mobile-menu-item">会社概要</li>
+                </a>
+                <a href="">
+                    <li class="mobile-menu-item">制作の流れ</li>
+                </a>
+            </ul>
+    </div>
+    <div class="global-container">
         <div class="back">
             <div class="back_img"></div>
-            <button class="menu-btn" onclick="document.querySelector('body').classList.toggle('menu-open');">
+            <button class="menu-btn">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -34,9 +47,10 @@
             </div>
             <div class="spinner"></div>
         </div>
-    </header>
 
-    <main>
+    
+
+     <main>
         <div class="text-animation">このようなお悩みありませんか？</div>
         <div class="contain">
             <!-- ーーーーーーーーー1つ目ーーーーーーーーー -->
@@ -101,16 +115,19 @@
             </button> 
         </div>
         
-    </main>
+     </main>
         
         <footer>
             <div class="footer-back">
-          <div class="name">作成者：Y.RIKUYA</div>
-          <div class="time">@2021/5</div>
-      </div>
-  </footer>
+                <div class="name">作成者：Y.RIKUYA</div>
+                <div class="time">@2021/5</div>
+            </div>
+        </footer>
+    </div>
+        
     
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="mobile-menu.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
