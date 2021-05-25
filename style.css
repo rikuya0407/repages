@@ -428,7 +428,7 @@ main .text-animation.inview .char:nth-child(15) {
     font-weight: bold;
   }
   main .text-animation {
-    font-size: 12px;
+    font-size: 24px;
   }
 }
 
