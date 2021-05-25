@@ -183,9 +183,9 @@ body {
 }
 
 main .text-animation {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin: 0px auto;
   margin-bottom: 20px;
   text-align: center;
@@ -426,6 +426,9 @@ main .text-animation.inview .char:nth-child(15) {
   .back .head-word .head-main {
     font-size: 80px;
     font-weight: bold;
+  }
+  main .text-animation {
+    font-size: 12px;
   }
 }
 
