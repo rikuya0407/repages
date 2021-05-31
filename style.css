@@ -31,7 +31,7 @@ body {
   display: inline-block;
   background-color: darkgoldenrod;
   width: 100%;
-  height: 500px;
+  height: 600px;
   margin-bottom: 50px;
 }
 
@@ -41,7 +41,7 @@ body {
 
 .back .head-word {
   position: absolute;
-  top: 100px;
+  top: 150px;
   left: 0;
   width: 100%;
   margin-left: 30px;
@@ -56,7 +56,7 @@ body {
 }
 
 .back .head-word .head-sub {
-  font-size: 30px;
+  font-size: 5vw;
   font-family: 'Dela Gothic One','Lucida Sans Unicode', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin-top: 10px;
 }
